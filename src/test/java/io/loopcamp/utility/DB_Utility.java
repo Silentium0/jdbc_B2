@@ -36,14 +36,13 @@ public class DB_Utility {
      */
     public static void createConnection(){
 
-        String url      = "jdbc:oracle:thin:@34.207.85.246:1521:XE" ;
+        String url      = "jdbc:oracle:thin:@54.210.117.54:1521:XE" ;
         String username =  "hr";
         String password =  "hr";
 
-
         createConnection(url, username, password);
-
     }
+
 
 
     /**

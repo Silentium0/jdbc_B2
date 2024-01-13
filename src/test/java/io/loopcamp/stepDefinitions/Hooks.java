@@ -17,8 +17,6 @@ public class Hooks {
     public void setUp() {
         Driver.getDriver();
     }
-
-
     @After
     public void tearDown(Scenario scenario){
         // only take a screenshot when scenario failed
@@ -27,12 +25,7 @@ public class Hooks {
             scenario.attach(screenshot,"image/png",scenario.getName());
         }
         //Driver.closeDriver();
-
     }
-
-
-
-
     @Before
     public void SetUpDb(){
         String url = ConfigurationReader.getProperty("docuport.db.url");

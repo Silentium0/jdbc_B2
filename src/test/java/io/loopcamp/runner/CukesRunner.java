@@ -14,8 +14,8 @@ import org.junit.runner.RunWith;
 
         features = "src/test/resources/features",
         glue = "io/loopcamp/stepDefinitions",
-        dryRun = true,
-        tags = ""
+        dryRun = false,
+        tags = "@db"
        // monochrome = true
 )
 
